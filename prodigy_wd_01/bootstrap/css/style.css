@@ -1,11 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
-.staticbg{
-    width: 100vw;
-    height: 100vh;
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Madimi One", sans-serif;
 }
 
-.staticbg img{
+.title{
+    text-align: center;
+}
+
+
+.swiper-slide{
+    width: 80vw;
+    height: 40vh;
+    position: relative;
+}
+.swiper-slide img{
     width: 100%;
     height: 100%;
+    max-height: 550px;
 }
+
+.swiper-pagination{
+    background-color: #ffffff37;
+    border-radius: 25%;
+}
+
+.btngrp{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* --------------------- */
+
+.supporting-devices{
+    width: 70vw;
+    margin: auto;
+}
+
+.device-info{
+    width: 100%;
+    height: 100%;
+
+}
+
+.device-info img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+
+.search-bar{
+    width: 100vw;
+    height: 100px;
+    margin: 10px 0% 10px 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.552)) ,url("https://wallpapercave.com/wp/wp7861360.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.search-bar input{
+    width: 90%;
+    margin: auto;
+    border: 2px solid white;
+    padding-left: 5px;
+    background: rgba(129, 123, 123, 0.641);
+    height: 30px;
+}
+
+
+/* animated btn */
+.search-btn {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 30px;
+    border: 2px solid white;
+    /* background-color: rgb(56, 247, 56); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+  
+.search-btn .span-mother {
+display: flex;
+overflow: hidden;
+}
+  
+.search-btn:hover .span-mother {
+    position: absolute;
+}
+  
+.search-btn:hover .span-mother span {
+transform: translateY(1.2em);
+}
+
+.search-btn .span-mother span:nth-child(1) {
+transition: 0.2s;
+}
+
+.search-btn .span-mother span:nth-child(2) {
+transition: 0.3s;
+}
+
+.search-btn .span-mother span:nth-child(3) {
+transition: 0.4s;
+}
+
+.search-btn .span-mother span:nth-child(4) {
+transition: 0.5s;
+}
+
+.search-btn .span-mother span:nth-child(5) {
+transition: 0.6s;
+}
+
+.search-btn .span-mother span:nth-child(6) {
+transition: 0.7s;
+}
+
+.search-btn .span-mother2 {
+display: flex;
+position: absolute;
+overflow: hidden;
+}
+
+.search-btn .span-mother2 span {
+transform: translateY(-1.2em);
+}
+
+.search-btn:hover .span-mother2 span {
+transform: translateY(0);
+}
+
+.search-btn .span-mother2 span {
+transition: 0.2s;
+}
+
+.search-btn .span-mother2 span:nth-child(2) {
+transition: 0.3s;
+}
+
+.search-btn .span-mother2 span:nth-child(3) {
+transition: 0.4s;
+}
+
+.search-btn .span-mother2 span:nth-child(4) {
+transition: 0.5s;
+}
+
+.search-btn .span-mother2 span:nth-child(5) {
+transition: 0.6s;
+}
+
+.search-btn .span-mother2 span:nth-child(6) {
+transition: 0.7s;
+}
+
+/* ------------------------------------------------------- */
+.search-bar button{
+    margin: auto;
+    text-wrap: nowrap;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+    display: inline-block;
+    width: 230px;
+    height: 300px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border:2px solid black;
+    /* padding: 2px; */
+}
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* --------------------------------------------------- */
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.head{
+    width: 90vw;
+    margin: auto;
+    text-align: left;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+
+.footer li{
+    text-decoration: underline;
+    list-style: none;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+/* mobile view */
