@@ -1,0 +1,79 @@
+
+
+
+body{
+    color: white;
+    background-color: black;
+}
+*{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    text-wrap: nowrap;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.timer{
+    font-size: 75px;
+}
+
+.btn-grp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons{
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 1% 5%;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+}
+
+#record-container{
+    margin-top: 5%;
+    border-top: 2px solid white;
+    margin: 5% auto;
+    padding-right: 3%;
+}
+
+#record-table{
+    text-align: left;
+}
+
+#record-table th{
+    padding-left: 40px;
+    padding-top: 5%;
+}
+#record-table td{
+    padding-left: 40px;
+    padding-left: 50px;
+}
+
+
+
+
+@media screen and (max-width:500px){
+    .timer{
+        font-size: 50px;
+    }
+    .buttons{
+        
+        font-size: 10px;
+    }
+    #record-table th{
+        padding-left: 30px;
+        padding-top: 5%;
+    }
+    #record-table td{
+        padding-left: 30px;
+        padding-left: 50px;
+    }
+}

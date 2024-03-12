@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+            <div class="container">
+                <div class="inner">
+
+                    <h1 class="timer">
+                        <span class="digit" id="hr">00</span>
+                        <span class="digit">:</span>
+    
+                        <span class="digit" id="min">00</span>
+                        <span class="digit">:</span>
+    
+                        <span class="digit" id="sec">00</span>
+                        <span class="digit">:</span>
+    
+                        <span class="digit" id="count">00</span>
+                    </h1>
+                    <div class="btn-grp">
+
+                        <button class="buttons" id="start" onclick="start()">Start</button>
+                        <button class="buttons" id="reset" onclick="reset()" >Reset</button>
+                        <button class="buttons" id="lap" onclick="lap()" >Lap</button>
+                        <button class="buttons" id="clearlap" onclick="clearLap()"> Clear Lap</button>
+                      
+                    </div>
+
+                    <div id="record-container">
+                        <table id="record-table">
+                          <tr>
+                            <th>Lap Number</th>
+                            <th>Time</th>
+                            <th>Diff</th>
+                          </tr>
+                          
+                          
+                          <tbody id="record-table-body"></tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+    
+           
+          
+      <script src="./script.js"></script>
+</body>
+</html>
