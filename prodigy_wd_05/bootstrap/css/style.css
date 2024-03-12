@@ -125,7 +125,9 @@
 }
 
 
-
+.weather-head{
+    font-size: 100px;
+}
 
 
 
@@ -143,4 +145,11 @@
     }
 
 
+}
+
+
+@media screen and (max-width:500px){
+    .weather-head{
+        font-size: 75px;
+    }
 }
