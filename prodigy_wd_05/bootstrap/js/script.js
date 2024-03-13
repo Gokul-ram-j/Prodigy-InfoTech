@@ -36,7 +36,7 @@ function response(city){
       }
       else if(weathercondition=="Clouds"){
         if(weatherdesc=="scattered clouds"){
-          vid=""
+          vid="./assert/overcastcloud.svg"
         }
         else if(weatherdesc=="overcast clouds"){
          vid="./assert/overcastcloud.svg"
@@ -57,8 +57,9 @@ function response(city){
         vid="./assert/snowflake.svg"
        }
        else{
-        vid="./assert/wind.svg"
+        vid="./assert/winnd.mp4"
        }
+       console.log(vid)
        main_img.setAttribute("src",vid)
        console.log(city)
        document.querySelector(".showlocation").innerHTML=" "+data.name
