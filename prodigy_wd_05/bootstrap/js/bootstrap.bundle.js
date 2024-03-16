@@ -3908,7 +3908,7 @@
   const CLASS_NAME_SHOW$5 = 'show';
   const EVENT_MOUSEDOWN = `mousedown.bs.${NAME$9}`;
   const Default$8 = {
-    className: 'modal-backdrop',
+    class: 'modal-backdrop',
     clickCallback: null,
     isAnimated: false,
     isVisible: true,
@@ -3916,7 +3916,7 @@
     rootElement: 'body' // give the choice to place backdrop under different elements
   };
   const DefaultType$8 = {
-    className: 'string',
+    class: 'string',
     clickCallback: '(function|null)',
     isAnimated: 'boolean',
     isVisible: 'boolean',
@@ -3986,7 +3986,7 @@
     _getElement() {
       if (!this._element) {
         const backdrop = document.createElement('div');
-        backdrop.className = this._config.className;
+        backdrop.class = this._config.class;
         if (this._config.isAnimated) {
           backdrop.classList.add(CLASS_NAME_FADE$4);
         }
@@ -4660,7 +4660,7 @@
       // 'static' option will be translated to true, and booleans will keep their value
       const isVisible = Boolean(this._config.backdrop);
       return new Backdrop({
-        className: CLASS_NAME_BACKDROP,
+        class: CLASS_NAME_BACKDROP,
         isVisible,
         isAnimated: true,
         rootElement: this._element.parentNode,
@@ -6030,10 +6030,10 @@
       if (!outerElem.classList.contains(CLASS_DROPDOWN)) {
         return;
       }
-      const toggle = (selector, className) => {
+      const toggle = (selector, class) => {
         const element = SelectorEngine.findOne(selector, outerElem);
         if (element) {
-          element.classList.toggle(className, open);
+          element.classList.toggle(class, open);
         }
       };
       toggle(SELECTOR_DROPDOWN_TOGGLE, CLASS_NAME_ACTIVE);
