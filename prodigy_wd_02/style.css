@@ -3,7 +3,6 @@
 
 body{
     color: white;
-    background-color: black;
 }
 *{
     text-align: center;
@@ -13,19 +12,27 @@ body{
 
 .container{
     width: 100vw;
-    height: 100vh;
+    min-height: 98vh;
+    max-height: fit-content;
     display: flex;
     justify-content: center;
     padding-top: 5%;
+    background: url("./wallpaperflare.com_wallpaper\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .timer{
     font-size: 75px;
+    backdrop-filter: blur(2px);
+
 }
 
 .btn-grp{
     display: flex;
     justify-content: space-evenly;
+    backdrop-filter: blur(2px);
+
 }
 
 .buttons{
@@ -36,12 +43,18 @@ body{
     background: transparent;
     color: white;
 }
+.buttons:hover{
+    background: white;
+    color: black;
+}
 
 #record-container{
     margin-top: 5%;
     border-top: 2px solid white;
     margin: 5% auto;
     padding-right: 3%;
+    backdrop-filter: blur(2px);
+
 }
 
 #record-table{
